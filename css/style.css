@@ -1,0 +1,35 @@
+/* css comuni */
+.container {
+    background-color: green;
+    min-height: 100px;
+}
+.row {
+    margin-bottom: 0px;
+    min-height: 50px;
+}
+[class*="col-"] {
+    min-height: 50px;
+    border: 1px solid rosybrown;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* css dedicato all'header */
+
+.header-top {
+    background-color: #2C3E50;
+}
+.jumbotron {
+    background-color: #1ABC9C;
+}
+.jumbotron>div {
+    height: 300px;
+}
+#img-jumbotron {
+    height: 200px;
+}
+
+/* css dedicato al main */
+
+
+
+/* css dedicato al footer  */
+
