@@ -1,7 +1,7 @@
 /* css comuni */
 .container {
-    background-color: green;
-    min-height: 100px;
+    /* background-color: green; */
+    min-height: 50px;
 }
 .row {
     margin-bottom: 0px;
@@ -10,12 +10,19 @@
 [class*="col-"] {
     min-height: 50px;
     border: 1px solid rosybrown;
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
 }
 /* css dedicato all'header */
+header {
+    color: white;
+    text-align: center;
+}
 
-.header-top {
+#header-top {
     background-color: #2C3E50;
+}
+#header-top [class*="col-"] {
+    line-height: 80px;
 }
 .jumbotron {
     background-color: #1ABC9C;
@@ -26,10 +33,104 @@
 #img-jumbotron {
     height: 200px;
 }
+#start {
+    line-height: 50px;
+}
 
 /* css dedicato al main */
+#portfolio {
+    text-align: center; 
+    line-height: 100px;
+}
+#portfolio .title {
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+[class*="main-img-"] {
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px -5px 10px -5px;
+}
+.main-img-1 {
+    background-color: #BA4B63;
+}
+.main-img-2 {
+    background-color: #1EA4B6;
+}
+.main-img-3 {
+    background-color: #140F0F;
+}
+.main-img-4 {
+    background-color: #1C83C1;
+}
+.main-img-5 {
+    background-color: #0E38B5;
+}
+.main-img-6 {
+    background-color: #CCB2A3;
+}
+#about {
+    background-color: #1ABC9C;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#about .title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+#about p {
+    padding-top: 5px;
+}
+#about> .row div:last-child {
+    margin-bottom: 5px;
+    text-align: center;
+}
+#icon-1 {
+    line-height: 50px;
+}
 
-
+#contact .title{
+    text-align: center;
+    line-height: 50px;
+}
+#button-1 {
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    background-color: #1ABC9C;
+}
 
 /* css dedicato al footer  */
+footer {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+footer [class*="col-"] {
+    position: relative;
+}
 
+footer span {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer-center {
+    background-color: #3A546D;
+}
+#footer-center [class*="col-"] {
+    height: 100px;
+}
+#footer-bottom {
+    background-color: #2C3E50;
+}
+#footer-center .footer-icon div{
+    height: 20px;
+}
