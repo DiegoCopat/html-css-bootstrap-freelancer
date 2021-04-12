@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <title>Bootstrap Freelancer</title>
@@ -14,20 +15,46 @@
         <header>
 
             <!-- sezione dedicata all'header nav -->
-            <section id="header-top" class="container">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-3 col-sm-offset-1 col-lg-2 col-lg-offset-2">title</div>
-                    <div class="col-xs-3 col-xs-offset-3 col-sm-4 col-sm-offset-3 col-lg-3">nav</div>
-                </div>
-            </section>
+            <nav id="header_top" class="navbar navbar-default">
+                <div id="header_nav" class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class=" navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">start bootstrap</a>
+                    </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
 
-            <section id="start" class="container">
+            <section id="start" class="container-fluid text-center">
                 <div class="row jumbotron">
-                    <div class="col-sm-6 col-sm-offset-3 ">
+                    <div class="col-sm-12">
                         <div class="row">
-                            <div id="img-jumbotron" class="col-lg-6 col-lg-offset-3">img</div>
-                            <div class="col-lg-12">title</div>
-                            <div class="col-lg-12">description</div>
+                            <div id="img-jumbotron" class="col-lg-6 col-lg-offset-3">
+                                <img src="img/avatar.svg" alt="avatar">
+                            </div>
+                            <div class="jumbo-content col-lg-12 text-uppercase">
+                                <h1>start bootstrap</h1>
+                                <div class="star-line">
+                                    <span><hr></span>
+                                    <span class="star-star"><i class="fas fa-star"></i></span>
+                                    <span><hr></span>
+                                </div>
+                                <div class="jumbo-description text-uppercase col-lg-12">grafic artist - web designer - illustrator</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,24 +68,43 @@
                 <div class="row">
                     <div" class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
                         <div class="row">
-                            <div class="col-lg-6 col-lg-offset-3 title">title</div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="main-img-1">img</div>
+                            <div class="col-lg-12 title">
+                                <h2>portfolio</h2>
+                                <div class="star-line">
+                                    <span><hr></span>
+                                    <span class="star-star"><i class="fas fa-star"></i></span>
+                                    <span><hr></span>
+                                </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="main-img-2">img</div>
+                                <div class="main-img-1">
+                                    <img class="radius-10" src="img/cabin.png" alt="cabin">
+                                </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="main-img-3">img</div>
+                                <div class="main-img-2">
+                                    <img class="radius-10" src="img/cake.png" alt="cake">
+                                </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="main-img-4">img</div>
+                                <div class="main-img-3">
+                                    <img class="radius-10" src="img/circus.png" alt="circus">
+                                </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="main-img-5">img</div>
+                                <div class="main-img-4">
+                                    <img class="radius-10" src="img/game.png" alt="game">
+                                </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="main-img-6">img</div>
+                                <div class="main-img-5">
+                                    <img class="radius-10" src="img/safe.png" alt="safe">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <div class="main-img-6">
+                                    <img class="radius-10" src="img/submarine.png" alt="submarine">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -66,28 +112,44 @@
             </section>
 
             <section id="about" class="container">
-                <div class="row col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                    <div class="col-sx-12 title">title</div>
+                <div class="row col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
+                    <div class="col-sx-12 title">
+                        <h2>about</h2>
+                        <div class="star-line">
+                            <span><hr></span>
+                            <span class="star-star"><i class="fas fa-star"></i></span>
+                            <span><hr></span>
+                        </div>
+                    </div>
                     <p class="col-sm-6 col-lg-4 col-lg-offset-2">
-                        text
+                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
                     </p>
                     <p class="col-sm-6 col-lg-4">
-                        text
+                        You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
                     </p>
-                    <div id="icon-1" class="col-sm-2 col-sm-offset-5 col-lg-2 col-lg-offset-5">icon</div>
+                    <div class="button col-xs-12">
+                        <a href="#"><i class="fas fa-download"></i> Download</a>
+                    </div>
                 </div>
             </section>
 
-            <section id="contact" class="contact container">
+            <section id="contact" class="container">
                 <div class="row col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                    <div class="title">title</div>
-                    <div class="col-xs-12">text</div>
-                    <div class="col-xs-12">text</div>
-                    <div class="col-xs-12">text</div>
-                    <div class="col-xs-12">text</div>
+                    <div class="title">
+                        <h2>Contact me</h2>
+                        <div class="star-line">
+                            <span><hr></span>
+                            <span class="star-star"><i class="fas fa-star"></i></span>
+                            <span><hr></span>
+                        </div>
+                    </div>
+                    <input class="col-xs-12" type="text" placeholder="Name" required>
+                    <input class="col-xs-12" type="email" placeholder="Email Address" required>
+                    <input class="col-xs-12" type="text" placeholder="Phone Number" required>
+                    <input class="text-area col-xs-12" type="text-area" placeholder="Message" rows="8" cols="80" required>
                     <div class="col-xs-12">
-                        <div class="row">
-                            <div id ="button-1" class="col-xs-3 col-sm-2">button</div>
+                        <div  id="button-1">
+                            <a href="#"> Send</a>
                         </div>
                     </div>
                 </div>
@@ -102,39 +164,56 @@
                     <div class="col-sm-12 col-lg-8 col-lg-offset-2">
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
-                                <span>text</span>
+                                <h3>location</h3>
+                                <div>2215 John Daniel Drive
+                                    Clark, MO 65243</div>
                             </div>
                             <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
                                 <div class="row footer-icon">
                                     <div class="col-xs-8 col-xs-offset-2 col-sm-12 col-sm-offset-0">
-                                        <span>title</span>
+                                        <h3>around the web</h3>
                                     </div>
-                                    <div class="col-xs-3">
-                                        <span>icon</span>
+                                    <div class="circle col-xs-3">
+                                        <a href="">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
                                     </div>
-                                    <div class="col-xs-3">
-                                        <span>icon</span>
+                                    <div class="circle col-xs-3">
+                                        <a href="">
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </a>
                                     </div>
-                                    <div class="col-xs-3">
-                                        <span>icon</span>
+                                    <div class="circle col-xs-3">
+                                        <a href="">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
                                     </div>
-                                    <div class="col-xs-3">
-                                        <span>icon</span>
+                                    <div class="circle col-xs-3">
+                                        <a href="">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4">
-                                <span>text</span>
+                                <h3>about freelancer</h3>
+                                <div>
+                                    Freelance is a free to use, MIT licensed Bootstrap theme created by <a class="freelancer" href="#">Start Bootstrap</a>.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div id="footer-bottom" class="row">
-                    <div class="col-xs-12 col-sm-12">text</div>
+                    <div class="copyright col-xs-12 col-sm-12">Copyright © Your Website 2020</div>
                 </div>
             </section>
         </footer>
         <!-- /sezione dedicata al footer  -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>

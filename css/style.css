@@ -1,4 +1,8 @@
 /* css comuni */
+body {
+    min-width: 300px;
+    letter-spacing: 0;
+}
 .container {
     /* background-color: green; */
     min-height: 50px;
@@ -7,33 +11,87 @@
     margin-bottom: 0px;
     min-height: 50px;
 }
-[class*="col-"] {
-    min-height: 50px;
-    border: 1px solid rosybrown;
-    /* background-color: rgba(0, 0, 0, 0.3); */
+h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.radius-10 {
+    border-radius: 10px;
+}
+.button {
+    margin: 0 auto;
+    padding-top: 30px;
 }
 
 
 /* css dedicato all'header */
 header {
-        color: white;
-        text-align: center;
+    color: white;
 }
 
-#header-top {
+#header_top,
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    text-transform: uppercase;
     background-color: #2C3E50;
+    color: white;
 }
-    #header-top [class*="col-"] {
+#header_top {
+    position: fixed;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    z-index: 2;
+}
+#start {
+    padding-top: 50px;
+}
+#start .row {
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 1.5em;
+}
+#header-top [class*="col-"] {
     line-height: 80px;
 }
 .jumbotron {
     background-color: #1ABC9C;
+    padding-bottom: 40px;
 }
-.jumbotron>div {
-    height: 300px;
+.jumbotron h1 {
+    font-size: 40px;
+    font-weight: 700;
 }
-#img-jumbotron {
+#img-jumbotron img{
     height: 200px;
+}
+.star-line {
+    font-size: 20px;
+    color: white;
+    line-height: 20px;
+}
+.star-line hr {
+    display: inline-block;
+    width: 10%;
+    border: 1px solid white;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.star-star {
+    margin: 0 10px 0 10px;
+}
+.jumbo-description {
+    padding-top: 10px;
+    text-transform: uppercase;
 }
 
 /* css dedicato al main */
@@ -42,14 +100,32 @@ header {
     line-height: 100px;
 }
 #portfolio .title {
-    height: 100px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
+#portfolio h2,
+#contact h2 {
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+#portfolio .star-line,
+#portfolio .star-star,
+#contact .star-line,
+#contact .star-star {
+    color: black;
+}
+#portfolio hr,
+#contact hr {
+    width: 20%;
+    border: 1px solid black;
+}
+#portfolio img {
+    width: 100%;
+}
 [class*="main-img-"] {
-    height: 150px;
     border-radius: 10px;
-    margin: 10px -5px 10px -5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .main-img-1 {
     background-color: #BA4B63;
@@ -84,25 +160,48 @@ header {
 #about p {
     padding-top: 5px;
 }
+#about h2 {
+    padding-top: 20px;
+}
 #about> .row div:last-child {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     text-align: center;
 }
-#icon-1 {
-    line-height: 50px;
+#about .button a {
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px; 
+    text-decoration: none;
+}
+#about .button i {
+    padding-right: 2px;
 }
 
 #contact .title{
     text-align: center;
     line-height: 50px;
 }
-#button-1 {
-    line-height: 50px;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
-    background-color: #1ABC9C;
+#contact input {
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid #E9ECEF;
 }
+
+#button-1 a {
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid white;
+    text-decoration: none;
+    background-color: #1ABC9C;
+    border-radius: 5px; 
+}
+#button-1 {
+    display: inline-block;
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+
 
 /* css dedicato al footer  */
 footer {
@@ -113,23 +212,55 @@ footer {
 footer [class*="col-"] {
     position: relative;
 }
-
+.circle {
+    padding: 0;
+}
+.footer-icon i {
+    padding-top: 5px;
+    width: 15px;  
+}
+.footer-icon a {
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
 footer span {
     position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.freelancer {
+    color: #1ABC9C;
 
+}
 #footer-center {
     background-color: #3A546D;
 }
-#footer-center [class*="col-"] {
-    height: 100px;
+#footer-center div .row {
+margin-bottom: 20px;
 }
 #footer-bottom {
     background-color: #2C3E50;
 }
-#footer-center .footer-icon div{
-    height: 20px;
+.copyright {
+    padding: 20px;
 }
+
+css per xs
+@media all and (max-width: 767px) {
+    
+}
+
+css per sm
+@media all and (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+css per md
+@media all and (min-width: 992px) and (max-width: 1200px) {
+   
+} 
+
+@media screen and (min-width: 768px)
