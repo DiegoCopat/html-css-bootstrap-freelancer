@@ -226,16 +226,17 @@ footer [class*="col-"] {
     position: relative;
 }
 
+.footer-icon {
+    line-height: 30px;
+    
+}
 .footer-icon i {
     font-size: 20px;
-    line-height: 25px;
-    vertical-align: middle;
 }
 .footer-icon a {
     vertical-align: middle;
     color: white;
-    width: 100px;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid white;
     border-radius: 50%;
     line-height: 40px;
@@ -258,6 +259,7 @@ footer span {
 }
 #footer-center {
     background-color: #3A546D;
+    text-align: center;
 }
 #footer-center div .row {
 margin-bottom: 20px;
@@ -269,13 +271,15 @@ margin-bottom: 20px;
     padding: 20px;
 }
 
-css per xs
+/* css per xs
 @media all and (max-width: 767px) {
-
+    .footer-icon {
+        min-width: 400px;
+    }
     
-}
+} */
 
-css per sm
+/* css per sm
 @media all and (min-width: 768px) and (max-width: 991px) {
     
 }
@@ -285,4 +289,4 @@ css per md
    
 } 
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px) */
