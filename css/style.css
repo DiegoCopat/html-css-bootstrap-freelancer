@@ -9,7 +9,7 @@ body {
 }
 .row {
     margin-bottom: 0px;
-    min-height: 50px;
+    /* min-height: 50px; */
 }
 h2 {
     font-size: 35px;
@@ -116,6 +116,7 @@ header {
 #contact .star-star {
     color: black;
 }
+
 #portfolio hr,
 #contact hr {
     width: 20%;
@@ -153,6 +154,9 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#about> .row {
+    margin-bottom: 35px;
+}
 #about .title {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -166,7 +170,7 @@ header {
     padding-top: 20px;
 }
 #about> .row div:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     text-align: center;
 }
 #about .button a {
@@ -226,21 +230,32 @@ footer [class*="col-"] {
     position: relative;
 }
 
-.footer-icon {
-    line-height: 30px;
-    
+footer ul {
+    list-style: none;
+    min-width: 220px;
+    margin: 0;
+    padding: 0;
 }
-.footer-icon i {
+footer li {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 2%;
     font-size: 20px;
-}
-.footer-icon a {
-    vertical-align: middle;
-    color: white;
-    padding: 10px;
     border: 1px solid white;
     border-radius: 50%;
-    line-height: 40px;
-    text-align: center;
+    overflow: hidden;
+}
+footer a i {
+    color: white;
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+.footer li a {
+    padding: 15px;
 }
 .footer-icon a:hover {
     background-color: white;
