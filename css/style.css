@@ -19,6 +19,8 @@ h3 {
     font-size: 20px;
     text-transform: uppercase;
     padding-bottom: 10px;
+    font-weight: 700;
+
 }
 .radius-10 {
     border-radius: 10px;
@@ -164,19 +166,26 @@ header {
     padding-top: 20px;
 }
 #about> .row div:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 #about .button a {
     color: white;
-    padding: 10px;
+    padding: 15px 20px;
     border: 1px solid white;
     border-radius: 10px; 
     text-decoration: none;
+    transition: background-color 0.5s, color 0.5s;
 }
 #about .button i {
     padding-right: 2px;
 }
+#about .button a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+}
+
 
 #contact .title{
     text-align: center;
@@ -190,18 +199,22 @@ header {
 
 #button-1 a {
     color: white;
-    padding: 10px 15px;
+    padding: 15px 20px;
     border: 1px solid white;
     text-decoration: none;
     background-color: #1ABC9C;
     border-radius: 5px; 
+    transition: filter 0.5s;
 }
 #button-1 {
     display: inline-block;
     padding-top: 80px;
     margin-bottom: 20px;
 }
-
+#button-1 a:hover {
+    filter: brightness(85%);
+    transition: filter 0.5s;
+}
 
 /* css dedicato al footer  */
 footer {
@@ -212,18 +225,26 @@ footer {
 footer [class*="col-"] {
     position: relative;
 }
-.circle {
-    padding: 0;
-}
+
 .footer-icon i {
-    padding-top: 5px;
-    width: 15px;  
+    font-size: 20px;
+    line-height: 25px;
+    vertical-align: middle;
 }
 .footer-icon a {
+    vertical-align: middle;
     color: white;
-    padding: 5px;
+    width: 100px;
+    padding: 15px;
     border: 1px solid white;
     border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+.footer-icon a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
 }
 footer span {
     position: absolute; 
@@ -250,6 +271,7 @@ margin-bottom: 20px;
 
 css per xs
 @media all and (max-width: 767px) {
+
     
 }
 
